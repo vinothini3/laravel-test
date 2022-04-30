@@ -11,7 +11,6 @@ class UserController extends Controller
 {
     public function index() {
         $users = User::paginate(10);
-        // echo "<pre>";print_r($users);
         return view('list', compact('users'));
     }
 
